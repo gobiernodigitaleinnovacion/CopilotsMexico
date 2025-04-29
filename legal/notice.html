@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aviso Legal de Copilots México. Información legal sobre el uso de nuestro sitio web y servicios.">
+    <meta name="keywords" content="aviso legal, Copilots México, información legal">
+    <meta name="author" content="Copilots México">
+    <title>Aviso Legal | Copilots México</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .legal-section {
+            padding: 120px 0 80px;
+            background: var(--light);
+        }
+        .legal-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .legal-section h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .legal-section p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+        .legal-section ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .legal-section li {
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/gdi.png" alt="Copilots México Logo" class="logo-img">
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="../public/index.html">Inicio</a></li>
+                    <li><a href="../gobiernos/index.html">Gobiernos</a></li>
+                    <li><a href="../empresas/index.html">Empresas</a></li>
+                    <li><a href="javascript:void(0)" id="contactLink">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección de Aviso Legal -->
+    <section class="legal-section">
+        <div class="container">
+            <h1>Aviso Legal</h1>
+            <p>Última actualización: 26 de abril de 2025</p>
+            <p>Este Aviso Legal regula el uso del sitio web de Copilots México. Al acceder a este sitio, aceptas cumplir con las leyes aplicables y las condiciones aquí establecidas.</p>
+
+            <h2>1. Identidad del Responsable</h2>
+            <p>El sitio web es operado por Copilots México, con domicilio en [Inserta dirección de tu empresa], México. Puedes contactarnos en <a href="mailto:contacto@copilotsmexico.com">contacto@copilotsmexico.com</a>.</p>
+
+            <h2>2. Uso del Sitio</h2>
+            <p>El contenido de este sitio web es únicamente para fines informativos. No garantizamos que la información sea completa, precisa o actualizada en todo momento.</p>
+
+            <h2>3. Propiedad Intelectual</h2>
+            <p>Todos los derechos de propiedad intelectual del contenido de este sitio, incluyendo textos, imágenes y logotipos, pertenecen a Copilots México. Queda prohibida su reproducción sin autorización previa.</p>
+
+            <h2>4. Enlaces a Terceros</h2>
+            <p>Nuestro sitio puede contener enlaces a sitios web de terceros. No nos hacemos responsables del contenido, políticas o prácticas de esos sitios.</p>
+
+            <h2>5. Ley Aplicable</h2>
+            <p>Este Aviso Legal se rige por las leyes de México. Cualquier disputa relacionada con el uso de este sitio será resuelta en los tribunales competentes de [Inserta ciudad], México.</p>
+
+            <h2>6. Contacto</h2>
+            <p>Para cualquier consulta sobre este Aviso Legal, contáctanos a través de nuestro formulario de contacto o en <a href="mailto:contacto@copilotsmexico.com">contacto@copilotsmexico.com</a>.</p>
+        </div>
+    </section>
+
+    <!-- Formulario Flotante -->
+    <!-- Formulario Flotante -->
+    <div class="contact-floating">
+        <button id="contactToggle"><i class="fas fa-envelope"></i> Contacto</button>
+        <div class="contact-form">
+            <button class="close-form" id="closeForm"><i class="fas fa-times"></i></button>
+            <h3>Contáctanos</h3>
+            <form id="contactForm" action="https://formspree.io/f/xrbqebaw" method="POST">
+                <input type="text" name="name" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="phone" placeholder="Teléfono">
+                <select name="reason" required>
+                    <option value="">Motivo de contacto</option>
+                    <option value="gobierno">Gobierno Digital</option>
+                    <option value="empresa">Soluciones Empresariales</option>
+                    <option value="demo">Solicitar Demo</option>
+                </select>
+                <textarea name="message" placeholder="Tu mensaje..." rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Copilots México</h3>
+                <p>Líderes en soluciones de inteligencia artificial para gobiernos y empresas en México.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/gobierno-digital-e-innovaci%C3%B3n/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/525510806597" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://x.com/Gobdigitale" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://github.com/gobiernodigitaleinnovacion" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.tiktok.com/@gobierno.digital6" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/gobiernodigitaleinnovacion/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/+525510806597" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.youtube.com/@Gobiernodigitaleinnovacion/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="../public/index.html">Inicio</a></li>
+                    <li><a href="../gobiernos/index.html">Para Gobiernos</a></li>
+                    <li><a href="../empresas/index.html">Para Empresas</a></li>
+                    <li><a href="javascript:void(0)" id="footerContactLink">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Servicios</h3>
+                <ul class="footer-links">
+                    <li><a href="../gobiernos/index.html">Copilots Estatales</a></li>
+                    <li><a href="../empresas/index.html">Soluciones Empresariales</a></li>
+                    <li><a href="#">Consultoría en IA</a></li>
+                    <li><a href="#">Capacitación</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="../legal/terms.html">Términos y Condiciones</a></li>
+                    <li><a href="../legal/privacy.html">Política de Privacidad</a></li>
+                    <li><a href="../legal/notice.html">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Copilots México. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/tabs.js"></script>
+</body>
+</html>

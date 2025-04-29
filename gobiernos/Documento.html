@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Copilots México: Plataforma de IA para gobiernos con datos de INEGI, CONEVAL y Hacienda. 5 temas clave con 400 indicadores.">
+    <meta name="keywords" content="IA para gobiernos, análisis de datos México, pobreza, demografía, finanzas públicas, FAIS">
+    <meta name="author" content="Copilots México">
+    <title>Copilots México | Flujo de Navegación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1A2A44;
+            --secondary-color: #00AEEF;
+            --accent-color: #E63946;
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+            --gray-color: #6C757D;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20mm;
+            box-sizing: border-box;
+            position: relative;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .page h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        .page h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .page p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .page strong {
+            color: var(--primary-color);
+        }
+        
+        .page em {
+            color: var(--gray-color);
+            font-style: italic;
+        }
+        
+        .page .text {
+            width: 100%;
+        }
+        
+        .page ul {
+            padding-left: 0;
+            list-style: none;
+            margin: 0 0 20px 0;
+        }
+        
+        .page li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .page li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background-color: var(--secondary-color);
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>');
+            mask-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .chat-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .chat-container {
+            width: 350px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .chat-container img {
+            width: 100%;
+            display: block;
+        }
+        
+        .flow-arrow {
+            font-size: 24px;
+            color: var(--secondary-color);
+            margin: 10px 0;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 15mm;
+            right: 15mm;
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .cover, .call-to-action {
+            background: linear-gradient(rgba(26, 42, 68, 0.85), rgba(26, 42, 68, 0.9)), url('https://images.pexels.com/photos/2404945/pexels-photo-2404945.jpeg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .cover h1, .call-to-action h1 {
+            color: white;
+            font-size: 42px;
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+        
+        .cover p, .call-to-action p {
+            color: white;
+            font-size: 16px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cover .subtitle {
+            font-size: 24px;
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .cover .contact, .call-to-action .contact {
+            font-size: 14px;
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .cover .contact a, .call-to-action .contact a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .cover .contact a:hover, .call-to-action .contact a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .qr-container {
+            background-color: white;
+            padding: 15px;
+            display: inline-block;
+            border-radius: 8px;
+            margin: 25px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .qr-code img {
+            width: 120px;
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .highlight-box {
+            background-color: rgba(0, 174, 239, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .example-questions {
+            background-color: var(--light-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .example-questions h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 10mm;
+            right: 15mm;
+            font-size: 12px;
+            color: var(--gray-color);
+        }
+        
+        @media print {
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .cover, .call-to-action {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                background: var(--primary-color) !important;
+            }
+            
+            .qr-container {
+                background-color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .page-number {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Portada -->
+    <div class="page cover">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Copilots México</h1>
+        <p class="subtitle">Interfaz Intuitiva para Análisis de Datos Gubernamentales</p>
+        <p>Plataforma de IA desarrollada por Gobierno Digital e Innovación (GDI)</p>
+        <div class="contact">
+            <p>Conoce más en: <a href="https://www.copilotsméxico.com/">www.copilotsméxico.com</a></p>
+            <p>Contacto: Juan Heriberto Rosas | juanheriberto.rosas@gobiernodigitaleinnovacion.com | 5510806597</p>
+            <p>Sobre nosotros: <a href="https://www.gobiernodigitaleinnovacion.com/">gobiernodigitaleinnovacion.com</a></p>
+        </div>
+        <div class="page-number">1</div>
+    </div>
+
+    <!-- Introducción -->
+    <div class="page">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Flujo de Navegación Intuitivo</h1>
+        <p>Copilots México ofrece una interfaz conversacional sencilla que guía al usuario paso a paso para obtener análisis detallados de los datos oficiales.</p>
+        
+        <div class="highlight-box">
+            <p>El sistema está diseñado para que cualquier funcionario público, sin necesidad de conocimientos técnicos, pueda acceder a información estratégica en solo 4 pasos.</p>
+        </div>
+        
+        <h2>Ejemplos de Preguntas:</h2>
+        <div class="example-questions">
+            <ul>
+                <li>¿Cómo está la pobreza en mi municipio?</li>
+                <li>¿Qué relación tiene el crecimiento demográfico y la demanda de servicios públicos?</li>
+                <li>¿Cómo está la migración en el estado?</li>
+                <li>Dame un análisis financiero del municipio</li>
+                <li>Dame una evaluación del FAIS 2024</li>
+                <li>¿Cuáles son los indicadores de rezago social?</li>
+                <li>Muestra la tendencia de población económicamente activa</li>
+            </ul>
+        </div>
+        
+        <p>El sistema interpreta estas preguntas naturales y guía al usuario a través de un proceso estructurado para obtener respuestas precisas.</p>
+        <div class="page-number">2</div>
+    </div>
+
+    <!-- Paso 1: Selección de Tema -->
+    <div class="page">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Paso 1: Selección del Tema</h1>
+        <p>Al iniciar una consulta, el sistema presenta los 5 temas principales disponibles para análisis:</p>
+        
+        <ul>
+            <li>Demografía</li>
+            <li>Pobreza</li>
+            <li>Rezago Social</li>
+            <li>Finanzas</li>
+            <li>FAIS</li>
+        </ul>
+        
+        <div class="chat-flow">
+            <div class="chat-container">
+                <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/menu.jpg" alt="Menú de temas">
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <p>El usuario selecciona el tema de interés haciendo clic en la opción correspondiente. El sistema entonces muestra los indicadores disponibles para ese tema.</p>
+        </div>
+        <div class="page-number">3</div>
+    </div>
+
+    <!-- Paso 2: Selección de Indicador -->
+    <div class="page">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Paso 2: Selección del Indicador</h1>
+        <p>Una vez seleccionado el tema, el sistema muestra una tarjeta con los indicadores disponibles para ese tema.</p>
+        
+        <div class="chat-flow">
+            <div class="chat-container">
+                <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/selecci%C3%B3n%20de%20indicadores.jpg" alt="Selección de indicadores">
+            </div>
+        </div>
+        
+        <p>Ejemplos de indicadores por tema:</p>
+        
+        <ul>
+            <li><strong>Demografía:</strong> Población total, densidad poblacional, tasa de crecimiento, migración</li>
+            <li><strong>Pobreza:</strong> Pobreza extrema, carencias sociales, índice de pobreza multidimensional</li>
+            <li><strong>Rezago Social:</strong> Educación, salud, servicios básicos, calidad de vivienda</li>
+            <li><strong>Finanzas:</strong> Ingresos propios, deuda pública, gasto en educación, inversión en infraestructura</li>
+            <li><strong>FAIS:</strong> Recursos asignados, proyectos ejecutados, impacto social</li>
+        </ul>
+        <div class="page-number">4</div>
+    </div>
+
+    <!-- Paso 3: Tipo de Análisis -->
+    <div class="page">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Paso 3: Selección del Tipo de Análisis</h1>
+        <p>Al seleccionar un indicador, el sistema ofrece diferentes tipos de análisis disponibles para ese indicador específico.</p>
+        
+        <div class="chat-flow">
+            <div class="chat-container">
+                <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/tipos%20de%20an%C3%A1lisis%20.jpg" alt="Tipos de análisis">
+            </div>
+        </div>
+        
+        <p>Opciones comunes de análisis:</p>
+        
+        <ul>
+            <li><strong>Análisis básico:</strong> Explicación del indicador y datos actuales</li>
+            <li><strong>Tendencia y patrones:</strong> Evolución histórica del indicador</li>
+            <li><strong>Hallazgos principales:</strong> Conclusiones clave y recomendaciones</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <p>El sistema adapta las opciones de análisis según las características de cada indicador, ofreciendo siempre las alternativas más relevantes.</p>
+        </div>
+        <div class="page-number">5</div>
+    </div>
+
+    <!-- Paso 4: Resultados -->
+    <div class="page">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Paso 4: Visualización de Resultados</h1>
+        <p>Finalmente, el sistema presenta los resultados del análisis solicitado en un formato claro y visualmente atractivo.</p>
+        
+        <div class="chat-flow">
+            <div class="chat-container">
+                <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/respuestas.jpg" alt="Resultados del análisis">
+            </div>
+        </div>
+        
+        <p>Características de los resultados:</p>
+        
+        <ul>
+            <li>Datos presentados en formato de texto claro y conciso</li>
+            <li>Posibilidad de profundizar en aspectos específicos</li>
+            <li>Recomendaciones accionables basadas en los datos</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <p>Todos los resultados incluyen la fuente de los datos (INEGI, CONEVAL, Hacienda) para garantizar transparencia y confiabilidad.</p>
+        </div>
+        <div class="page-number">6</div>
+    </div>
+
+    <!-- Ejemplos de Consultas -->
+    <div class="page">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>Ejemplos de Consultas y Respuestas</h1>
+        <p>Estos son ejemplos reales de cómo los usuarios pueden interactuar con Copilots México:</p>
+        
+        <h2>Consulta 1: Análisis de Pobreza</h2>
+        <ul>
+            <li><strong>Pregunta:</strong> "¿Cómo está la pobreza en mi municipio?"</li>
+            <li><strong>Tema seleccionado:</strong> Pobreza</li>
+            <li><strong>Indicador elegido:</strong> Pobreza multidimensional</li>
+            <li><strong>Tipo de análisis:</strong> Hallazgos principales</li>
+            <li><strong>Resultado:</strong> Porcentaje de población en pobreza, comparación con el estado y nacional, factores principales que contribuyen</li>
+        </ul>
+        
+        <h2>Consulta 2: Finanzas Municipales</h2>
+        <ul>
+            <li><strong>Pregunta:</strong> "Dame un análisis financiero del municipio"</li>
+            <li><strong>Tema seleccionado:</strong> Finanzas</li>
+            <li><strong>Indicador elegido:</strong> Ingresos propios vs. transferencias</li>
+            <li><strong>Tipo de análisis:</strong> Tendencia y patrones (últimos 5 años)</li>
+            <li><strong>Resultado:</strong> Gráfico de evolución, comparación con municipios similares, recomendaciones para mejorar ingresos propios</li>
+        </ul>
+        
+        <h2>Consulta 3: Evaluación FAIS</h2>
+        <ul>
+            <li><strong>Pregunta:</strong> "Dame una evaluación del FAIS 2024"</li>
+            <li><strong>Tema seleccionado:</strong> FAIS</li>
+            <li><strong>Indicador elegido:</strong> Ejecución de recursos</li>
+            <li><strong>Tipo de análisis:</strong> Comparativa regional</li>
+            <li><strong>Resultado:</strong> Porcentaje de ejecución, proyectos realizados, impacto en indicadores sociales</li>
+        </ul>
+        <div class="page-number">7</div>
+    </div>
+
+    <!-- Llamado a la Acción -->
+    <div class="page call-to-action">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/gdi.jpg" alt="Logo GDI">
+        </div>
+        <h1>¿Listo para Transformar tu Gestión Pública?</h1>
+        <p>Descubre cómo Copilots México puede ayudarte a tomar decisiones basadas en datos con nuestra interfaz intuitiva y poder analítico.</p>
+        
+        <div class="qr-container">
+            <div class="qr-code">
+                <img src="https://raw.githubusercontent.com/gobiernodigitaleinnovacion/imagenes/refs/heads/main/qrcopilostmexico.png">
+            </div>
+            <p style="color: var(--primary-color); margin-top: 10px;">Escanea para una demostración</p>
+        </div>
+        
+        <div class="contact">
+            <h2>Contáctanos</h2>
+            <p><strong>Web:</strong> <a href="https://www.copilotsméxico.com/">www.copilotsméxico.com</a></p>
+            <p><strong>Contacto:</strong> Juan Heriberto Rosas</p>
+            <p><strong>Email:</strong> juanheriberto.rosas@gobiernodigitaleinnovacion.com</p>
+            <p><strong>Teléfono:</strong> 5510806597</p>
+            <p><strong>Sobre GDI:</strong> <a href="https://www.gobiernodigitaleinnovacion.com/">gobiernodigitaleinnovacion.com</a></p>
+        </div>
+        
+        <p style="margin-top: 30px;"><strong>Gobierno Digital e Innovación - Datos para mejores decisiones</strong></p>
+        <div class="page-number">8</div>
+    </div>
+</body>
+</html>

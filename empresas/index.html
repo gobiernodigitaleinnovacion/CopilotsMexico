@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Copilots México: Creamos copilots para empresas con datos estructurados y no estructurados, usando Microsoft Fabric y Azure AI Foundry. Soluciones personalizadas para optimizar tus operaciones.">
+    <meta name="keywords" content="copilots para empresas, IA para negocios México, Microsoft Fabric, Azure AI Foundry, índice sectorial, datos estructurados, datos no estructurados">
+    <meta name="author" content="Copilots México">
+    <title>Copilots México | Soluciones de IA para Empresas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para el video en la sección hero */
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .hero-video-embed {
+            max-width: 300px;
+            width: 100%;
+            height: 169px; /* Relación de aspecto 16:9 para 300px de ancho */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            .hero-buttons {
+                flex-direction: column;
+            }
+            .hero-video-embed {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/gdi.png" alt="Copilots México Logo" class="logo-img">
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="../public/index.html">Inicio</a></li>
+                    <li><a href="../gobiernos/index.html">Gobiernos</a></li>
+                    <li><a href="../empresas/index.html" class="active">Empresas</a></li>
+                    <li><a href="javascript:void(0)" id="contactLink">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="../assets/videos/hero-banner.mp4" type="video/mp4">
+            <img src="../assets/images/fallback-hero.jpg" alt="Fondo de IA para empresas en México">
+        </video>
+        <div class="hero-content">
+            <h1>Soluciones de IA para Empresas</h1>
+            <p class="hero-subtitle">Creamos copilots personalizados para optimizar tus operaciones, utilizando datos estructurados y no estructurados.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i> Solicitar Demo
+                </a>
+                <div class="hero-video-embed">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dV_WV0lUaxU" title="Copilots México - Soluciones para Empresas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección de Datos -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Datos Estructurados y No Estructurados</h2>
+                <p>Construimos copilots con información estructurada de bases de datos y datos no estructurados como correos, facturas y documentos.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Datos Estructurados</h3>
+                    <p>Conectamos tus bases de datos a un Lakehouse mediante Microsoft Fabric, definiendo tablas para un acceso eficiente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Datos No Estructurados</h3>
+                    <p>Integramos correos, facturas y documentos al Lakehouse para un análisis completo de tu información.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Índice Sectorial y Semántico</h3>
+                    <p>Desarrollamos índices sectoriales y semánticos para datos no estructurados, mejorando la precisión del copilot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Tecnología -->
+    <section class="features-section" style="background: #f1f3f5;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnología Avanzada</h2>
+                <p>Utilizamos herramientas líderes para construir copilots robustos y personalizados para tu negocio.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Microsoft Fabric</h3>
+                    <p>Conectamos bases de datos y datos no estructurados a un Lakehouse, integrando índices con Microsoft Fabric.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Azure AI Foundry</h3>
+                    <p>Elegimos y conectamos modelos de IA con tus datos mediante Azure AI Foundry para un rendimiento óptimo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Personalización</h3>
+                    <p>Ajustamos el copilot según tus instrucciones, definiendo su comportamiento como un analista u otro rol.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Beneficios para tu Empresa</h2>
+                <p>Nuestros copilots te ayudan a tomar decisiones más inteligentes y a optimizar tus operaciones.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automatización</h3>
+                    <p>Automatizamos procesos clave, reduciendo costos operativos y mejorando la eficiencia.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Análisis Financiero</h3>
+                    <p>Modelos predictivos para optimizar tus finanzas y maximizar el retorno de inversión.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Inteligencia de Mercado</h3>
+                    <p>Entiende mejor a tus clientes y competencia con análisis avanzados de mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Casos de Uso con Pestañas -->
+    <section class="tabs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Casos de Uso</h2>
+                <p>Descubre cómo nuestros copilots pueden transformar diferentes áreas de tu negocio.</p>
+            </div>
+            <div class="tab-buttons">
+                <button class="tab-button">Ventas</button>
+                <button class="tab-button">Logística</button>
+                <button class="tab-button">Atención al Cliente</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-panel">
+                    <h3>Optimización de Ventas</h3>
+                    <p>Nuestros copilots analizan datos de ventas y comportamiento del cliente para identificar oportunidades, predecir tendencias y aumentar tus ingresos.</p>
+                </div>
+                <div class="tab-panel">
+                    <h3>Gestión de Logística</h3>
+                    <p>Automatizamos la gestión de inventarios y optimizamos rutas de entrega, reduciendo costos y mejorando la eficiencia operativa.</p>
+                </div>
+                <div class="tab-panel">
+                    <h3>Atención al Cliente</h3>
+                    <p>Ofrecemos respuestas rápidas y personalizadas a tus clientes, mejorando su experiencia y reduciendo la carga de tu equipo de soporte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario Flotante -->
+    <div class="contact-floating">
+        <button id="contactToggle"><i class="fas fa-envelope"></i> Contacto</button>
+        <div class="contact-form">
+            <button class="close-form" id="closeForm"><i class="fas fa-times"></i></button>
+            <h3>Contáctanos</h3>
+            <form id="contactForm" action="https://formspree.io/f/xrbqebaw" method="POST">
+                <input type="text" name="name" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="phone" placeholder="Teléfono">
+                <select name="reason" required>
+                    <option value="">Motivo de contacto</option>
+                    <option value="gobierno">Gobierno Digital</option>
+                    <option value="empresa">Soluciones Empresariales</option>
+                    <option value="demo">Solicitar Demo</option>
+                </select>
+                <textarea name="message" placeholder="Tu mensaje..." rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Copilots México</h3>
+                    <p>Líderes en soluciones de inteligencia artificial para gobiernos y empresas en México.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/gobierno-digital-e-innovaci%C3%B3n/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/525510806597" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://x.com/Gobdigitale" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/gobiernodigitaleinnovacion" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@gobierno.digital6" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/gobiernodigitaleinnovacion/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/+525510806597" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Gobiernodigitaleinnovacion/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../public/index.html">Inicio</a></li>
+                        <li><a href="../gobiernos/index.html">Para Gobiernos</a></li>
+                        <li><a href="../empresas/index.html">Para Empresas</a></li>
+                        <li><a href="javascript:void(0)" id="footerContactLink">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="../gobiernos/index.html">Copilots Estatales</a></li>
+                        <li><a href="../empresas/index.html">Soluciones Empresariales</a></li>
+                        <li><a href="#">Consultoría en IA</a></li>
+                        <li><a href="#">Capacitación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="../legal/terms.html">Términos y Condiciones</a></li>
+                        <li><a href="../legal/privacy.html">Política de Privacidad</a></li>
+                        <li><a href="../legal/notice.html">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Copilots México. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/tabs.js"></script>
+</body>
+</html>

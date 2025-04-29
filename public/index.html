@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Copilots México: Servicios de creación de soluciones de IA para gobiernos y empresas en México. Transforma tu toma de decisiones con inteligencia artificial.">
+    <meta name="keywords" content="copilots México, IA para gobiernos, copilots para empresas, inteligencia artificial México, creación de copilots">
+    <meta name="author" content="Copilots México">
+    <title>Copilots México | Gobierno Digital e Innovación</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/videos/hero-banner.mp4" as="video">
+    <link rel="preload" href="/css/styles.css" as="style">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/gdi.png" alt="Copilots México Logo" class="logo-img">
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="../public/index.html" class="active">Inicio</a></li>
+                    <li><a href="../gobiernos/index.html">Gobiernos</a></li>
+                    <li><a href="../empresas/index.html">Empresas</a></li>
+                    <li><a href="javascript:void(0)" id="contactLink">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner con Video -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="../assets/videos/hero-banner.mp4" type="video/mp4">
+            <img src="../assets/images/fallback-hero.jpg" alt="Fondo de IA para toma de decisiones en México">
+        </video>
+        <div class="hero-content">
+            <h1>Transforma tu Toma de Decisiones con IA</h1>
+            <p class="hero-subtitle">Creamos soluciones de inteligencia artificial personalizadas para gobiernos y empresas en México.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-badge">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Cobertura Nacional</span>
+                </div>
+                <div class="stat-badge">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Actualización</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="../gobiernos/index.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-city"></i> Para Gobiernos
+                </a>
+                <a href="../empresas/index.html" class="btn btn-outline btn-lg">
+                    <i class="fas fa-building"></i> Para Empresas
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección de Características Principales -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluciones de IA para Todos</h2>
+                <p>Ofrecemos servicios de creación de copilots personalizados para gobiernos y empresas, adaptados a tus necesidades específicas.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Para Gobiernos</h3>
+                    <p>Desarrollamos copilots que ayudan a los gobiernos a tomar decisiones basadas en datos, optimizando políticas públicas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Para Empresas</h3>
+                    <p>Creamos soluciones de IA que mejoran la eficiencia operativa, finanzas y análisis de mercado para tu negocio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Personalización</h3>
+                    <p>Adaptamos cada copilot a las necesidades únicas de tu organización con tecnología de punta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario Flotante -->
+    <div class="contact-floating">
+        <button id="contactToggle"><i class="fas fa-envelope"></i> Contacto</button>
+        <div class="contact-form">
+            <button class="close-form" id="closeForm"><i class="fas fa-times"></i></button>
+            <h3>Contáctanos</h3>
+            <form id="contactForm" action="https://formspree.io/f/xrbqebaw" method="POST">
+                <input type="text" name="name" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="phone" placeholder="Teléfono">
+                <select name="reason" required>
+                    <option value="">Motivo de contacto</option>
+                    <option value="gobierno">Gobierno Digital</option>
+                    <option value="empresa">Soluciones Empresariales</option>
+                    <option value="demo">Solicitar Demo</option>
+                </select>
+                <textarea name="message" placeholder="Tu mensaje..." rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Copilots México</h3>
+                    <p>Líderes en soluciones de inteligencia artificial para gobiernos y empresas en México.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/gobierno-digital-e-innovaci%C3%B3n/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/525510806597" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://x.com/Gobdigitale" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/gobiernodigitaleinnovacion" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@gobierno.digital6" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/gobiernodigitaleinnovacion/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/+525510806597" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Gobiernodigitaleinnovacion/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../public/index.html">Inicio</a></li>
+                        <li><a href="../gobiernos/index.html">Para Gobiernos</a></li>
+                        <li><a href="../empresas/index.html">Para Empresas</a></li>
+                        <li><a href="javascript:void(0)" id="footerContactLink">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="../gobiernos/index.html">Copilots Estatales</a></li>
+                        <li><a href="../empresas/index.html">Soluciones Empresariales</a></li>
+                        <li><a href="#">Consultoría en IA</a></li>
+                        <li><a href="#">Capacitación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="../legal/terms.html">Términos y Condiciones</a></li>
+                        <li><a href="../legal/privacy.html">Política de Privacidad</a></li>
+                        <li><a href="../legal/notice.html">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Copilots México. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/tabs.js"></script>
+</body>
+</html>

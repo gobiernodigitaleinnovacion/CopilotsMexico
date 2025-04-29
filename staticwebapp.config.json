@@ -1,0 +1,28 @@
+{
+    "navigationFallback": {
+      "rewrite": "/public/index.html"
+    },
+    "routes": [
+      {
+        "route": "/*",
+        "allowedRoles": ["anonymous"]
+      }
+    ],
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/public/index.html",
+        "statusCode": 200
+      }
+    },
+    "globalHeaders": {
+      "Cache-Control": "no-cache"
+    },
+    "mimeTypes": {
+      ".html": "text/html",
+      ".css": "text/css",
+      ".js": "application/javascript",
+      ".png": "image/png",
+      ".jpg": "image/jpeg",
+      ".mp4": "video/mp4"
+    }
+  }
