@@ -1,28 +1,29 @@
 {
-    "navigationFallback": {
+  "navigationFallback": {
+    "rewrite": "/public/index.html",
+    "exclude": ["/public/assets/*", "/public/css/*", "/public/js/*"]
+  },
+  "routes": [
+    {
+      "route": "/*",
       "rewrite": "/public/index.html"
     },
-    "routes": [
-      {
-        "route": "/*",
-        "allowedRoles": ["anonymous"]
-      }
-    ],
-    "responseOverrides": {
-      "404": {
-        "rewrite": "/public/index.html",
-        "statusCode": 200
-      }
+    {
+      "route": "/gobiernos/*",
+      "rewrite": "/public/gobiernos/index.html"
     },
-    "globalHeaders": {
-      "Cache-Control": "no-cache"
+    {
+      "route": "/empresas/*",
+      "rewrite": "/public/empresas/index.html"
     },
-    "mimeTypes": {
-      ".html": "text/html",
-      ".css": "text/css",
-      ".js": "application/javascript",
-      ".png": "image/png",
-      ".jpg": "image/jpeg",
-      ".mp4": "video/mp4"
+    {
+      "route": "/legal/*",
+      "rewrite": "/public/legal/*.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/public/index.html"
     }
   }
+}
